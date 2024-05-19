@@ -512,6 +512,8 @@ public class App {
 <br>
 <br>
 
+> ログサンプル
+
 ```java
 Hello, Zebra!
 *********************************
