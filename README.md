@@ -41,7 +41,8 @@ public class App {
     String printerIpAdr = "192.168.4.58";
     static String printerDriverName1 = "ZDesigner ZQ620 (ZPL)";
     static String printerDriverName2 = "ZDesigner ZD611R-300dpi ZPL";
-    // ZPL: Recieve Variable Feedback Data
+
+    // ZPL: Send ZPL + Recieve RFID Feedback Data
     static String zplData1 = """
         ^XA
         ^DFR:AAA.ZPL
@@ -58,7 +59,7 @@ public class App {
         """;
 
 
-    // ZPL: Recieve RFID Feedback Data
+    // ZPL: Send ZPL + Recieve RFID Feedback Data
     static String zplData2 = """
         ^XA
         ^RS8
@@ -69,14 +70,14 @@ public class App {
         ^XZ        
         """;
 
-        // ZPL: Recieve RFID Feedback Data
-        static String zplData3 = """
-        ^XA
-        ^RS8
-        ^RFR,H,0,8,2^FS
-        ^RFR,H^FS
-        ^XZ        
-        """;
+    // ZPL: Send ZPL
+    static String zplData3 = """
+    ^XA
+    ^RS8
+    ^RFR,H,0,8,2^FS
+    ^RFR,H^FS
+    ^XZ        
+    """;
 
 
 
